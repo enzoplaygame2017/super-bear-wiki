@@ -65,8 +65,19 @@ button {
     --paginaCor: #3a3a3a;
 }
 
-.texto {
+:root[data-legendas="desligadas"] figcaption {
+    display: none;
+}
+
+.texto, span.texto {
     color: var(--textoCor);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    vertical-align: middle;
+    padding: 0;
 }
 
 .column {

@@ -56,3 +56,24 @@ async function feedback() {
         alert('Erro de conexão. Verifique sua internet e tente de novo.');
     }
 }
+
+function aplicarLegendas(ligadas) {
+    document.documentElement.dataset.legendas = ligadas ? 'ligadas' : 'desligadas';;
+    try {
+        localStorage.setItem('legendas', ligadas ? 'ligadas' : 'desligadas');
+    } catch (e) {}
+}
+
+let legendasLigadas = true;
+try {
+    legendasLigadas = localStorage.getItem('legendas') !== 'desligadas';
+} catch (e) {}
+aplicarLegendas(legendasLigadas);
+
+const caixaLegendas = document.getElementById('check-legenda');
+if (caixaLegendas) {
+    caixaLegendas.checked = legendasLigadas;
+    caixaLegendas.addEventListener('change', () => {
+        aplicarLegendas(caixaLegendas.checked);
+    });
+}

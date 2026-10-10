@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="pagina">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="/estilo-da-wiki.css"/>
+        <title>Baaren - Super Bear Wiki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h1>Baaren - Super Bear Wiki (não-oficial)</h1>
+        <button onclick="modoEscuro()">Modo Escuro</button>
+        <button onclick="modoClaro()">Modo Claro</button>
+        <h2>Navegue com mais facilidade</h2>
+        <a href="#sobre">Sobre</a><br/>
+        <a href="#aparencia">Aparência</a><br/>
+        <a href="#habilidades">Habilidades</a>
+        <div class="container" id="sobre">
+            <div id="div-esquerda">
+                <h2>Sobre</h2>
+                <p class="texto">Baaren é o protagonista de <i>Super Bear Adventure</i> e o personagem controlado pelo jogador. Ele é um urso que parte em uma aventura pelo reino depois que seus amigos são capturados e a paz do reino é ameaçada.</p>
+                <p class="texto">Durante sua jornada, Baaren explora diferentes regiões, enfrenta inimigos, encontra personagens e resgata os ursos presos pelo reino. Sua aventura também o leva a descobrir a verdade sobre o que aconteceu com seu irmão.</p>
+                <p class="texto">Baaren conta com a ajuda de Shicka durante sua jornada. Juntos, os dois atravessam diferentes lugares e enfrentam os desafios necessários para salvar o reino.</p>
+            </div>
+            <div id="div-direita">
+                <table class="normal">
+                    <tr>
+                        <th>Espécie</th>
+                        <th>Status</th>
+                        <th>Primeira Aparição</th>
+                        <th>Aliados</th>
+                        <th>Papel</th>
+                    </tr>
+                    <tr>
+                        <td class="texto">Urso</td>
+                        <td class="texto">Vivo, não-infectado</td>
+                        <td class="texto">No início do jogo</td>
+                        <td class="texto">Shicka</td>
+                        <td class="texto">Protagonista</td>
+                    </tr>
+                </table>
+                <a href="/tela-inicial.html" id="retorno-para-casa">Volte para casa</a>
+            </div>
+        </div>
+        <h2 id="aparencia">Aparência</h2>
+        <div class="container">
+            <img class="imagem-esquerda" src="/imagens/urso-baaren.jpg" alt="Baaren de frente"/>
+            <div class="column">
+                <p class="texto">Baaren é um urso de visual quadrado e estilizado, com a cabeça e o corpo em formato de bloco. Seu pelo é marrom, com tom mais claro e amarelado no focinho, na barriga e na parte interna das orelhas. Ele tem olhos retangulares pretos e um focinho pequeno com nariz escuro.</p>
+                <p class="texto">Duas alças azuis passam pelos ombros e pelo peito, e é com elas que Baaren carrega Shicka, sua companheira de aventura, nas costas durante toda a jornada. As patas têm três listras escuras que representam as garras. A cabeça, o corpo, as mãos e os pés são peças separadas, que parecem flutuar em volta do corpo.</p>
+            </div>
+        </div>
+        <h2 id="habilidades">Habilidades</h2>
+        <figure>
+            <img src="/imagens/pulo-baaren.jpg"/>
+            <figcaption>Baaren pode pular.</figcaption>
+        </figure>
+        <figure>
+            <img src="/imagens/soco-baaren.jpg"/>
+            <figcaption>Baaren ataca inimigos por meio do soco.</figcaption>
+        </figure>
+        <figure>
+            <img src="/imagens/salto-longo-baaren.jpg"/>
+            <figcaption>Baaren pode dar um salto longo, o que torna ele mais rápido.</figcaption>
+        </figure>
+        <figure>
+            <img src="/imagens/mergulho-baaren.jpg"/>
+            <figcaption>Baaren pode mergulhar, tornando-o mais rápido também. A única diferença é que ele pode ser interrompido.</figcaption>
+        </figure>
+        <figure>
+            <img src="/imagens/barrigada-baaren.jpg"/>
+            <figcaption>Baaren pode dar uma barrigada, atacando inimigos. Detalhe: barrigada mata renas instantaniamente.</figcaption>
+        </figure>
+        <div class="container">
+            <fieldset>
+                <legend class="texto">feedBack</legend>
+                <p class="texto">Nome: </p><input type="text" placeholder="Seu Nome Aqui" id="nome" name="nome"/><br/><br/>
+                <p class="texto">feedBack: </p><textarea placeholder="Seu feedBack Aqui" maxlength="500" id="textarea" cols="100"></textarea>
+                <p class="texto" id="caracteresNumero"><span id="contador" class="texto">0</span>/500</p><br/>
+                <button onclick="feedback()"><span>Enviar</span></button>
+            </fieldset>
+        </div>
+        <footer>
+            <p class="texto normal">CopyRight<sup>&copy;</sup>.<br/>Todos os direitos reservados.</p>
+        </footer>
+        <script src="/funcoes.js"></script>
+    </body>
+</html>

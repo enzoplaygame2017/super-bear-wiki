@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="pagina">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Super Bear Adventure Wiki (não-oficial)</title>
+    <link type="text/css" rel="stylesheet" href="estilo-da-wiki.css"/>
+</head>
+<body>
+    <h1>Super Bear Adventure Wiki (não-oficial)</h1>
+    <button onclick="modoEscuro()">Modo Escuro</button>
+    <button onclick="modoClaro()">Modo Claro</button>
+    <h2>Navegue com mais facilidade</h2>
+    <a href="#mundos">Mundos</a>
+    <a href="#personagens">Personagens</a>
+    <h2 id="mundos">Mundos</h2>
+    <a href="/mundos/vila-ursos.html">Vila dos Ursos</a><br/><br/>
+    <a href="/mundos/aldeia-tartarugas.html">Aldeia das Tartarugas</a><br/><br/>
+    <a href="/mundos/vale-nevado.html">Vale Nevado</a><br/><br/>
+    <a href="/mundos/deserto-beemothep.html">Deserto Beemothep</a><br/><br/>
+    <a href="/mundos/casa-gigante.html">Casa gigante</a><br/><br/>
+    <a href="/mundos/colmeia.html">Colméia</a><br/><br/>
+    <a href="/mundos/fliperama.html">Mundo fliperama</a><br/><br/>
+    <h2 id="personagens">Personagens</h2>
+    <a href="personagens/baaren.html">Baaren</a><br/><br/>
+    <a href="personagens/shicka.html">Shicka</a><br/><br/>
+    <fieldset>
+        <legend class="texto">feedBack</legend>
+        <p class="texto">Nome: </p><input type="text" placeholder="Seu Nome Aqui" id="nome" name="nome"/><br/><br/>
+        <p class="texto">feedBack: </p><textarea placeholder="Seu feedBack Aqui" maxlength="500" id="textarea"></textarea><p class="texto" id="caracteresNumero"><span id="contador" class="texto">0</span>/500</p><br/>
+        <button onclick="feedback()"><span>Enviar</span></button>
+    </fieldset>
+    <footer>
+    <p class="texto normal">CopyRight<sup>&copy;</sup>. Todos os direitos reservados.</p>
+    </footer>
+    <script src="funcoes.js"></script>
+</body>
+</html>

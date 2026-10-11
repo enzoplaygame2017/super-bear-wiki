@@ -1,87 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" id="pagina">
-<head>
-    <meta charset="UTf-8">
+  <head>
+    <meta charset="UTf-8" />
     <title>Vila dos Ursos - Super Bear Wiki (não-oficial)</title>
-    <link type="text/css" rel="stylesheet" href="/estilo-da-wiki.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
+    <link type="text/css" rel="stylesheet" href="/estilo-da-wiki.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <h1>Vila dos Ursos</h1>
     <button onclick="modoEscuro()">Modo Escuro</button>
     <button onclick="modoClaro()">Modo Claro</button>
-<div class="container">
-    <div id="div-esquerda">
+    <div class="container">
+      <div id="div-esquerda">
         <h2>Sobre</h2>
-        <p class="texto">A Vila dos Ursos é um dos lugares mais importantes de <i>Super Bear Adventure</i>. Ela é uma área onde o jogador pode explorar diferentes lugares, encontrar personagens e descobrir várias partes do mundo do jogo.</p>
-        <p class="texto">Na vila, existem casas, caminhos, árvores e outros elementos que deixam o ambiente bastante interessante para explorar. O jogador pode andar pela região, conversar com personagens e procurar objetos e segredos escondidos.</p>
-        <p class="texto">Além de ser um lugar de exploração, a Vila dos Ursos também serve como ponto de partida para várias aventuras. A partir dela, o jogador pode conhecer outras áreas e enfrentar diferentes desafios durante sua jornada.</p>
-        <p class="texto">Por isso, a Vila dos Ursos é uma parte importante de <i>Super Bear Adventure</i>. Ela ajuda a apresentar o mundo do jogo e oferece um espaço para o jogador explorar, descobrir coisas novas e continuar sua aventura.</p>
-    </div>
-    <div id="div-direita">
+        <p class="texto">
+          A Vila dos Ursos é um dos lugares mais importantes de
+          <i>Super Bear Adventure</i>. Ela é uma área onde o jogador pode
+          explorar diferentes lugares, encontrar personagens e descobrir várias
+          partes do mundo do jogo.
+        </p>
+        <p class="texto">
+          Na vila, existem casas, caminhos, árvores e outros elementos que
+          deixam o ambiente bastante interessante para explorar. O jogador pode
+          andar pela região, conversar com personagens e procurar objetos e
+          segredos escondidos.
+        </p>
+        <p class="texto">
+          Além de ser um lugar de exploração, a Vila dos Ursos também serve como
+          ponto de partida para várias aventuras. A partir dela, o jogador pode
+          conhecer outras áreas e enfrentar diferentes desafios durante sua
+          jornada.
+        </p>
+        <p class="texto">
+          Por isso, a Vila dos Ursos é uma parte importante de
+          <i>Super Bear Adventure</i>. Ela ajuda a apresentar o mundo do jogo e
+          oferece um espaço para o jogador explorar, descobrir coisas novas e
+          continuar sua aventura.
+        </p>
+      </div>
+      <div id="div-direita">
         <table class="normal">
-            <tr>
-                <th>Ursos pra salvar</th>
-                <th>Baús pra pegar</th>
-                <th>Tem chance de perder vida?</th>
-            </tr>
-            <tr>
-                <td class="texto">0</td>
-                <td class="texto">2</td>
-                <td class="texto">Não</td>
-            </tr>
+          <tr>
+            <th>Ursos pra salvar</th>
+            <th>Baús pra pegar</th>
+            <th>Tem chance de perder vida?</th>
+          </tr>
+          <tr>
+            <td class="texto">0</td>
+            <td class="texto">2</td>
+            <td class="texto">Não</td>
+          </tr>
         </table>
-        <label for="retorno"><a href="/tela-inicial.html" id="retorno-para-casa" class="normal" name="retorno">Volte para Casa</a></label>
+        <a
+          href="/tela-inicial.html"
+          id="retorno-para-casa"
+          class="normal"
+          name="retorno"
+          >Volte para Casa</a
+        >
+      </div>
     </div>
-</div>
     <h2>Imagens</h2>
-    <p style="box-shadow: 10px 10px 10px #999797; background-color: #5d5dff; color: #ffffff;">Dica: Passe o mouse por cima das imagens para ver a legenda.</p>
+    <p
+      style="
+        box-shadow: 10px 10px 10px #999797;
+        background-color: #5d5dff;
+        color: #ffffff;
+      "
+    >
+      Dica: Passe o mouse por cima das imagens para ver a legenda.
+    </p>
+    <div>
+      <input type="checkbox" id="check-legenda" name="legenda" checked />
+      <label for="check-legenda"
+        ><span class="texto">Mostrar legendas</span></label
+      >
+    </div>
+    <br />
     <figure>
-        <img src="/imagens/vila-ursos.jpg"/>
-        <figcaption>Essa é a vila dos ursos vista de cima.</figcaption>
+      <img src="/imagens/vila-ursos.jpg" />
+      <figcaption>Essa é a vila dos ursos vista de cima.</figcaption>
     </figure>
     <figure>
-        <img src="/imagens/irmaos-capitalus.jpg"/>
-        <figcaption>No centro da vila, temos as lojas do Capitalus, do Capitalos e da Vovótalus.</figcaption>
+      <img src="/imagens/irmaos-capitalus.jpg" />
+      <figcaption>
+        No centro da vila, temos as lojas do Capitalus, do Capitalos e da
+        Vovótalus.
+      </figcaption>
     </figure>
     <figure>
-        <img src="/imagens/tutorial01.jpg"/>
-        <figcaption>Quando você começa um novo save, você spawna no tutorial para aprender os controles básicos.</figcaption>
+      <img src="/imagens/tutorial01.jpg" />
+      <figcaption>
+        Quando você começa um novo save, você spawna no tutorial para aprender
+        os controles básicos.
+      </figcaption>
     </figure>
     <figure>
-        <img src="/imagens/tutorial02.jpg"/>
-        <figcaption>Em cima do tutorial, se aprende o mergulho duplo e a barrigada concentrada.</figcaption>
+      <img src="/imagens/tutorial02.jpg" />
+      <figcaption>
+        Em cima do tutorial, se aprende o mergulho duplo e a barrigada
+        concentrada.
+      </figcaption>
     </figure>
     <figure>
-        <img src="/imagens/spawner-bola-gigante.jpg"/>
-        <figcaption>Ao lado da entrada do Vale Nevado, tem um spawner de uma bola exatamente do tamanho de um player.</figcaption>
+      <img src="/imagens/spawner-bola-gigante.jpg" />
+      <figcaption>
+        Ao lado da entrada do Vale Nevado, tem um spawner de uma bola exatamente
+        do tamanho de um player.
+      </figcaption>
     </figure>
     <h2>Sons</h2>
-    <p class="texto">Música do hub</p> 
+    <p class="texto">Música do hub</p>
     <audio controls>
-        <source src="/sons/hub.mp3"/>
+      <source src="/sons/hub.mp3" />
     </audio>
     <p class="texto">Música da vila dos ursos</p>
     <audio controls>
-        <source src="/sons/vila-ursos.mp3"/>
+      <source src="/sons/vila-ursos.mp3" />
     </audio>
     <p class="texto">História principal</p>
     <audio controls>
-        <source src="/sons/historia.mp3"/>
+      <source src="/sons/historia.mp3" />
     </audio>
     <p class="texto">I'm a Bear</p>
     <audio controls>
-        <source src="/sons/im-a-bear.mp3"/>
+      <source src="/sons/im-a-bear.mp3" />
     </audio>
     <fieldset>
-        <legend class="texto">feedBack</legend>
-        <p class="texto">Nome: </p><input type="text" placeholder="Seu Nome Aqui" maxlength="25" id="nome" name="nome"/><br/><br/>
-        <p class="texto">feedBack: </p><textarea placeholder="Seu feedBack Aqui" maxlength="500" id="textarea" cols="100"></textarea><p class="texto" id="caracteresNumero"><span id="contador" class="texto">0</span>/500</p><br/>
-        <button onclick="feedback()"><span>Enviar</span></button>
+      <legend class="texto">feedBack</legend>
+      <p class="texto">Nome:</p>
+      <input
+        type="text"
+        placeholder="Seu Nome Aqui"
+        maxlength="25"
+        id="nome"
+        name="nome"
+      /><br /><br />
+      <p class="texto">feedBack:</p>
+      <textarea
+        placeholder="Seu feedBack Aqui"
+        maxlength="500"
+        id="textarea"
+        cols="100"
+      ></textarea>
+      <p class="texto" id="caracteresNumero">
+        <span id="contador" class="texto">0</span>/500
+      </p>
+      <br />
+      <button onclick="feedback()"><span>Enviar</span></button>
     </fieldset>
     <footer>
-        <p class="texto normal">CopyRight<sup>&copy;</sup>. Todos os direitos reservados.<br/>Email: enzogabrielrodriguescampos2017@gmail.com<br/>Junte-se a mim: LoteiringFast</p>
+      <p class="texto normal">
+        CopyRight<sup>&copy;</sup>.<br />Todos os direitos reservados.
+      </p>
     </footer>
-    <script src="funcoes.js"></script>
-</body>
+    <script src="/funcoes.js"></script>
+  </body>
 </html>

@@ -1,9 +1,72 @@
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" src="/estilo-da-wiki.css"/>
-    </head>
-    <body>
-        
-    </body>
+<!doctype html>
+<html id="pagina">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/estilo-da-wiki.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <h1>Shicka - Super Bear Wiki (não-oficial)</h1>
+    <button onclick="modoEscuro()">Modo Escuro</button>
+    <button onclick="modoClaro()">Modo Claro</button>
+    <h2>Navegue com mais facilidade</h2>
+    <div class="container" id="sobre">
+      <div id="div-esquerda">
+        <h2 id="sobre">Sobre</h2>
+        <p class="texto">
+          Shicka é uma mochileira e companheira de
+          <a href="baaren.html">Baaren</a>
+          em
+          <i>Super Bear Adventure</i>
+          . Mochileiros são criaturas que dependem de seus portadores para
+          sobreviver, e Shicka passa a maior parte da aventura presa às costas
+          de Baaren, ajudando-o em sua jornada pelo reino.
+        </p>
+        <p class="texto">
+          Os dois se conhecem logo após o tutorial, no único momento em que
+          Shicka aparece fora das costas de Baaren. A partir daí, ela o
+          acompanha durante toda a aventura.
+        </p>
+        <p class="texto">
+          Shicka tem papel importante na exploração do mundo do jogo. Ela pode
+          segurar chaves para Baaren, ficar gigante na Colmeia e dar dicas sobre
+          os arredores, ajudando o jogador a encontrar caminhos e segredos
+          escondidos.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <fieldset>
+        <legend class="texto">feedBack</legend>
+        <p class="texto">Nome:</p>
+        <input type="text" placeholder="Seu Nome Aqui" id="nome" name="nome" />
+        <br />
+        <br />
+        <p class="texto">feedBack:</p>
+        <textarea
+          placeholder="Seu feedBack Aqui"
+          maxlength="500"
+          id="textarea"
+          cols="100"
+        ></textarea>
+        <p class="texto" id="caracteresNumero">
+          <span id="contador" class="texto">0</span>
+          /500
+        </p>
+        <br />
+        <button onclick="feedback()"><span>Enviar</span></button>
+      </fieldset>
+    </div>
+    <footer>
+      <p class="texto normal">
+        CopyRight
+        <sup>&copy;</sup>
+        .
+        <br />
+        Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="/funcoes.js"></script>
+  </body>
 </html>

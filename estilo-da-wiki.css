@@ -3,7 +3,6 @@
 
 a {
   color: var(--linkCor);
-  text-decoration: none;
   text-shadow: 1px 1px 1px #000000;
 }
 

@@ -1,9 +1,11 @@
-let textoTextarea = document.getElementById("textarea");
-let contador = document.getElementById("contador");
+const textoTextarea = document.getElementById("textarea");
+const contador = document.getElementById("contador");
 
-textoTextarea.addEventListener("input", () => {
-  contador.textContent = textoTextarea.value.length;
-});
+if(textoTextarea && contador) {
+    textoTextarea.addEventListener("input", () => {
+        contador.textContent = textoTextarea.value.length;
+    });
+}
 
 function aplicarTema(tema) {
   document.documentElement.dataset.tema = tema;

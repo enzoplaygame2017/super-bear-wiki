@@ -85,6 +85,8 @@ input[type="checkbox"] {
 .column {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 fieldset {
@@ -208,17 +210,9 @@ figure:hover figcaption {
     width: auto;
     margin: 20px 0;
   }
-
-  .imagem-esquerda {
-    float: none;
-    display: block;
-    margin: 0 auto 10px;
-  }
 }
 
 img.imagem-esquerda {
-  float: left;
-  margin: 0 15px 10px 0;
   max-width: 100%;
   height: auto;
 }

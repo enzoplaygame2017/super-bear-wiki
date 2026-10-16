@@ -14,13 +14,6 @@ function aplicarTema(tema) {
   } catch (e) {}
 }
 
-function modoEscuro() {
-  aplicarTema("escuro");
-}
-function modoClaro() {
-  aplicarTema("claro");
-}
-
 try {
   aplicarTema(localStorage.getItem("tema") || "claro");
 } catch (e) {}
@@ -58,7 +51,7 @@ async function feedback() {
       document.getElementById("textarea").value = "";
       document.getElementById("contador").textContent = "0";
     } else {
-      alert("Não foi possível enviar agora. Tente novamente mais tarde.");
+      alert("Não foi possível enviar agora. Tente novamente no próximo mês.");
     }
   } catch (erro) {
     alert("Erro de conexão. Verifique sua internet e tente de novo.");

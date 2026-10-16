@@ -2,18 +2,22 @@
 <html id="pagina">
   <head>
     <meta charset="UTF-8" />
+    <title>Shicka - Super Bear Wiki (não-oficial)</title>
     <link rel="stylesheet" href="/estilo-da-wiki.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-
   <body>
     <h1>Shicka - Super Bear Wiki (não-oficial)</h1>
-    <button onclick="modoEscuro()">Modo Escuro</button>
-    <button onclick="modoClaro()">Modo Claro</button>
+    <button onclick="aplicarTema('escuro')">Modo Escuro</button>
+    <button onclick="aplicarTema('claro')">Modo Claro</button>
     <h2>Navegue com mais facilidade</h2>
+    <a href="#sobre">Sobre</a>
+    <br />
+    <br />
+    <a href="#aparencia">Aparência</a>
     <div class="container" id="sobre">
       <div id="div-esquerda">
-        <h2 id="sobre">Sobre</h2>
+        <h2>Sobre</h2>
         <p class="texto">
           Shicka é uma mochileira e companheira de
           <a href="baaren.html">Baaren</a>
@@ -21,12 +25,15 @@
           <i>Super Bear Adventure</i>
           . Mochileiros são criaturas que dependem de seus portadores para
           sobreviver, e Shicka passa a maior parte da aventura presa às costas
-          de Baaren, ajudando-o em sua jornada pelo reino.
+          de
+          <a href="baaren.html">Baaren</a>
+          , ajudando-o em sua jornada pelo reino.
         </p>
         <p class="texto">
           Os dois se conhecem logo após o tutorial, no único momento em que
-          Shicka aparece fora das costas de Baaren. A partir daí, ela o
-          acompanha durante toda a aventura.
+          Shicka aparece fora das costas de
+          <a href="baaren.html">Baaren</a>
+          . A partir daí, ela o acompanha durante toda a aventura.
         </p>
         <p class="texto">
           Shicka tem papel importante na exploração do mundo do jogo. Ela pode
@@ -35,17 +42,64 @@
           escondidos.
         </p>
       </div>
+      <div id="div-direita">
+        <table class="normal">
+          <thead>
+            <tr>
+              <th>Espécie</th>
+              <th>Status</th>
+              <th>Primeira Aparição</th>
+              <th>Aliados</th>
+              <th>Papel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mochileira</td>
+              <td>Companheira de Baaren</td>
+              <td>Após o tutorial</td>
+              <td><a href="baaren.html">Baaren</a></td>
+              <td>Auxílio na exploração do reino</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h2 id="aparencia">Aparência</h2>
+    <div class="container">
+      <img
+        class="imagem-esquerda"
+        src="/imagens/shicka.jpg"
+        alt="shicka de frente"
+      />
+      <div class="column">
+        <p>
+          A Shicka é uma criatura semelhante a um pássaro, com o corpo, a cabeça
+          e os braços cobertos por penas amarelas.
+        </p>
+        <p>
+          Sua barriga é arredondada e azul-clara, criando um contraste com o
+          restante do corpo. Seu rosto apresenta olhos pretos e amendoados, um
+          bico laranja e uma pequena crista amarela no topo da cabeça.
+        </p>
+        <p>
+          Ela também possui uma alça azul que permite prendê-la às costas do
+          urso Baaren, acompanhando-o durante suas aventuras em
+          <em>Super Bear Adventure</em>
+          .
+        </p>
+      </div>
     </div>
     <div class="container">
       <fieldset>
-        <legend class="texto">feedBack</legend>
+        <legend class="texto">Feedback</legend>
         <p class="texto">Nome:</p>
         <input type="text" placeholder="Seu Nome Aqui" id="nome" name="nome" />
         <br />
         <br />
-        <p class="texto">feedBack:</p>
+        <p class="texto">Feedback:</p>
         <textarea
-          placeholder="Seu feedBack Aqui"
+          placeholder="Seu Feedback Aqui"
           maxlength="500"
           id="textarea"
           cols="100"
@@ -55,12 +109,14 @@
           /500
         </p>
         <br />
-        <button onclick="feedback()"><span>Enviar</span></button>
+        <button onclick="feedback()">
+          <span>Enviar</span>
+        </button>
       </fieldset>
     </div>
     <footer>
       <p class="texto normal">
-        CopyRight
+        Copyright
         <sup>&copy;</sup>
         .
         <br />

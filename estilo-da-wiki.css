@@ -3,7 +3,11 @@
 
 a {
   color: var(--linkCor);
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 0.5px 1px 1px #000000;
+}
+
+div.sem-sublinhado a {
+  text-decoration: none;
 }
 
 body {
@@ -34,7 +38,7 @@ h2 {
 input,
 textarea {
   border-radius: 0.5rem;
-  border: 1px solid #003cff;
+  border: 1.5px solid #003cff;
   padding: 0.5rem;
   width: 100%;
   box-sizing: border-box;
@@ -43,7 +47,7 @@ textarea {
 button {
   padding: 0.5rem;
   border-radius: 0.5rem;
-  border: 1px solid #0000ff;
+  border: 1.5px solid #0000ff;
   background-color: #3d6bff;
   margin: 10px;
   margin-left: 0px;
@@ -125,27 +129,30 @@ p {
   margin-left: 10px;
 }
 
-table.normal {
+table {
   border-collapse: collapse;
   width: 100%;
 }
 
-table.normal td {
-  border: 1px solid #ccc;
-  padding: 10px;
+table tbody {
+  border: 1.5px solid #ccc;
   text-align: center;
   padding-left: 0;
   padding-right: 0;
 }
 
-table.normal th {
-  border: 1px solid #ccc;
-  padding: 10px;
+table thead {
+  border: 1.5px solid #ccc;
   text-align: center;
   background-color: #003cff;
   color: #ffffff;
   padding-left: 0;
   padding-right: 0;
+}
+
+table thead th, table tbody td {
+  border: 1.5px solid #ccc;
+  padding: 10px;
 }
 
 a#retorno-para-casa {
@@ -155,7 +162,7 @@ a#retorno-para-casa {
   text-shadow: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  border: 1px solid #0000ff;
+  border: 1.5px solid #0000ff;
   background-color: #3d6bff;
   margin: 50px;
   margin-left: 100px;
@@ -163,6 +170,7 @@ a#retorno-para-casa {
   font-weight: 100;
   width: 175px;
   margin-bottom: 0;
+  text-decoration: none;
 }
 
 figure {
@@ -214,4 +222,5 @@ figure:hover figcaption {
 img.imagem-esquerda {
   max-width: 100%;
   height: auto;
+  margin-right: 10px;
 }

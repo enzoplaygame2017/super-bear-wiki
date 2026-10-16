@@ -8,8 +8,8 @@
   </head>
   <body>
     <h1>Baaren - Super Bear Wiki (não-oficial)</h1>
-    <button onclick="modoEscuro()">Modo Escuro</button>
-    <button onclick="modoClaro()">Modo Claro</button>
+    <button onclick="aplicarTema('escuro')">Modo Escuro</button>
+    <button onclick="aplicarTema('claro')">Modo Claro</button>
     <h2>Navegue com mais facilidade</h2>
     <a href="#sobre">Sobre</a>
     <br />
@@ -40,20 +40,24 @@
       </div>
       <div id="div-direita">
         <table class="normal">
-          <tr>
-            <th>Espécie</th>
-            <th>Status</th>
-            <th>Primeira Aparição</th>
-            <th>Aliados</th>
-            <th>Papel</th>
-          </tr>
-          <tr>
-            <td class="texto">Urso</td>
-            <td class="texto">Vivo, não-infectado</td>
-            <td class="texto">No início do jogo</td>
-            <td class="texto">Shicka</td>
-            <td class="texto">Protagonista</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Espécie</th>
+              <th>Status</th>
+              <th>Primeira Aparição</th>
+              <th>Aliados</th>
+              <th>Papel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="texto">Urso</td>
+              <td class="texto">Vivo, não-infectado</td>
+              <td class="texto">No início do jogo</td>
+              <td class="texto"><a href="shicka.html">Shicka</a></td>
+              <td class="texto">Protagonista</td>
+            </tr>
+          </tbody>
         </table>
         <a href="/tela-inicial.html" id="retorno-para-casa" class="normal">
           Volte para casa
@@ -76,10 +80,12 @@
         </p>
         <p class="texto">
           Duas alças azuis passam pelos ombros e pelo peito, e é com elas que
-          Baaren carrega Shicka, sua companheira de aventura, nas costas durante
-          toda a jornada. As patas têm três listras escuras que representam as
-          garras. A cabeça, o corpo, as mãos e os pés são peças separadas, que
-          parecem flutuar em volta do corpo.
+          Baaren carrega
+          <a href="shicka.html">Shicka</a>
+          , sua companheira de aventura, nas costas durante toda a jornada. As
+          patas têm três listras escuras que representam as garras. A cabeça, o
+          corpo, as mãos e os pés são peças separadas, que parecem flutuar em
+          volta do corpo.
         </p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="pagina">
+<html id="pagina" lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <title>Shicka - Super Bear Wiki (não-oficial)</title>
@@ -10,11 +10,15 @@
     <h1>Shicka - Super Bear Wiki (não-oficial)</h1>
     <button onclick="aplicarTema('escuro')">Modo Escuro</button>
     <button onclick="aplicarTema('claro')">Modo Claro</button>
+    <button onclick="aplicarTema('sistema')">Modo Sistema</button>
     <h2>Navegue com mais facilidade</h2>
     <a href="#sobre">Sobre</a>
     <br />
     <br />
     <a href="#aparencia">Aparência</a>
+    <br />
+    <br />
+    <a href="#habilidades">Habilidades</a>
     <div class="container" id="sobre">
       <div id="div-esquerda">
         <h2>Sobre</h2>
@@ -70,19 +74,20 @@
       <img
         class="imagem-esquerda"
         src="/imagens/shicka.jpg"
-        alt="shicka de frente"
+        alt="Shicka de frente"
+        style="width: 450px"
       />
       <div class="column">
-        <p>
+        <p class="texto">
           A Shicka é uma criatura semelhante a um pássaro, com o corpo, a cabeça
           e os braços cobertos por penas amarelas.
         </p>
-        <p>
+        <p class="texto">
           Sua barriga é arredondada e azul-clara, criando um contraste com o
           restante do corpo. Seu rosto apresenta olhos pretos e amendoados, um
           bico laranja e uma pequena crista amarela no topo da cabeça.
         </p>
-        <p>
+        <p class="texto">
           Ela também possui uma alça azul que permite prendê-la às costas do
           urso Baaren, acompanhando-o durante suas aventuras em
           <em>Super Bear Adventure</em>
@@ -90,29 +95,61 @@
         </p>
       </div>
     </div>
+    <h2 id="habilidades">Habilidades</h2>
+    <input type="checkbox" id="check-legenda" checked name="legenda" />
+    <label for="check-legenda" class="texto">
+      <span>Mostrar legenda</span>
+    </label>
+    <figure>
+      <img
+        src="/imagens/shicka-dica.jpg"
+        alt="Shicka dando dicas para o jogador"
+        class="texto"
+        style="width: 450px"
+      />
+      <figcaption class="texto">
+        Shicka pode dar dicas sobre os arredores, ajudando o jogador a encontrar
+        caminhos e segredos escondidos.
+      </figcaption>
+    </figure>
     <div class="container">
-      <fieldset>
-        <legend class="texto">Feedback</legend>
-        <p class="texto">Nome:</p>
-        <input type="text" placeholder="Seu Nome Aqui" id="nome" name="nome" />
-        <br />
-        <br />
-        <p class="texto">Feedback:</p>
-        <textarea
-          placeholder="Seu Feedback Aqui"
-          maxlength="500"
-          id="textarea"
-          cols="100"
-        ></textarea>
-        <p class="texto" id="caracteresNumero">
-          <span id="contador" class="texto">0</span>
-          /500
-        </p>
-        <br />
-        <button onclick="feedback()">
-          <span>Enviar</span>
-        </button>
-      </fieldset>
+      <form>
+        <fieldset>
+          <legend class="texto">Feedback</legend>
+          <p class="texto">Nome:</p>
+          <input
+            type="text"
+            placeholder="Seu Nome Aqui"
+            id="nome"
+            name="nome"
+          />
+          <br />
+          <br />
+          <p class="texto">E-mail:</p>
+          <input
+            type="email"
+            placeholder="Seu E-mail Aqui"
+            id="email"
+            name="email"
+          />
+          <br />
+          <br />
+          <p class="texto">Feedback:</p>
+          <textarea
+            placeholder="Seu Feedback Aqui"
+            maxlength="500"
+            id="textarea"
+          ></textarea>
+          <p class="texto" id="caracteresNumero">
+            <span id="contador" class="texto">0</span>
+            /500
+          </p>
+          <br />
+          <button onclick="feedback()">
+            <span>Enviar</span>
+          </button>
+        </fieldset>
+      </form>
     </div>
     <footer>
       <p class="texto normal">
